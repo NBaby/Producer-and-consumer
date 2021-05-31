@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7p-4F-cEO">
+                                <rect key="frame" x="74" y="176" width="62" height="30"/>
+                                <state key="normal" title="开始生产"/>
+                                <connections>
+                                    <action selector="bengin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eL-Ro-dqM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kT-5f-rFX">
+                                <rect key="frame" x="191.5" y="438" width="31" height="30"/>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LiM-PG-Q10"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwS-KX-Ag9">
+                                <rect key="frame" x="75" y="214" width="62" height="30"/>
+                                <state key="normal" title="开始消费"/>
+                                <connections>
+                                    <action selector="beginCost:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cfu-o5-Tbj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGQ-P6-e9Y">
+                                <rect key="frame" x="186" y="526" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2kT-5f-rFX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2dt-m0-6e8"/>
+                            <constraint firstItem="UwS-KX-Ag9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="8W7-no-N9U"/>
+                            <constraint firstItem="UwS-KX-Ag9" firstAttribute="top" secondItem="y7p-4F-cEO" secondAttribute="bottom" constant="8" symbolic="YES" id="9Qh-6x-AoD"/>
+                            <constraint firstItem="2kT-5f-rFX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FJB-cv-DDM"/>
+                            <constraint firstItem="iGQ-P6-e9Y" firstAttribute="top" secondItem="2kT-5f-rFX" secondAttribute="bottom" constant="58" id="LGC-ah-8tX"/>
+                            <constraint firstItem="y7p-4F-cEO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="ks9-4n-op8"/>
+                            <constraint firstItem="y7p-4F-cEO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="lZF-sQ-Et3"/>
+                            <constraint firstItem="iGQ-P6-e9Y" firstAttribute="centerX" secondItem="2kT-5f-rFX" secondAttribute="centerX" id="rQ1-Y0-PLI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="iGQ-P6-e9Y" id="87z-qx-ERb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
